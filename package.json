@@ -1,0 +1,26 @@
+{
+  "name": "sqlite-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server für SQLite-Datenbankabfragen",
+  "type": "module",
+  "bin": {
+    "sqlite-mcp-server": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "keywords": ["mcp", "sqlite", "database"],
+  "author": "",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "better-sqlite3": "^11.7.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.10.1",
+    "typescript": "^5.7.2"
+  }
+}
